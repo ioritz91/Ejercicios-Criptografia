@@ -1,4 +1,4 @@
-He hecho este ejercicio en python ya que me ha parecido bastante mas complejo hacerlo en C, empezando desde la desencriptación en base64.
+He hecho este ejercicio en python para reutilizar funciones usadas en ejercicios anteriores,  como la desencriptación en base64 o la desencriptacion ECB en modo CBS.
 
 Para compilar este proyecto, es necesario instalar pycryptodome ejecutando:
 
