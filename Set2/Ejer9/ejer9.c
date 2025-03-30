@@ -7,7 +7,7 @@ void pkcs7_pad(char *data, int block_size) {
 
     // Agregar el padding
     for (int i = 0; i < padding_len; i++) {
-        data[data_len + i] = (char) padding_len; //casting a char
+        data[data_len + i] =  padding_len;
     }
 
     // Asegurar que el texto esté terminado con un \0
