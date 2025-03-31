@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/ejer9.dir/ejer9.c.o -o ejer9 

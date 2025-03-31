@@ -1,0 +1,3 @@
+/home/iugartemendia/Set1/Ejer1/C/build/CMakeFiles/ejer1.dir
+/home/iugartemendia/Set1/Ejer1/C/build/CMakeFiles/edit_cache.dir
+/home/iugartemendia/Set1/Ejer1/C/build/CMakeFiles/rebuild_cache.dir

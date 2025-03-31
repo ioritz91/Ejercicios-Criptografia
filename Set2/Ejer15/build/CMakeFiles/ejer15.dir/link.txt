@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/ejer15.dir/ejer15.c.o -o ejer15 
