@@ -6,12 +6,14 @@ void pkcs7_pad(char *data, int block_size) {
     int padding_len = block_size - (data_len % block_size); //20 - (16 % 20) = 4, 16 - 16 % 16 = 0
 
     // Agregar el padding
+    if (padding_len != block_size){
     for (int i = 0; i < padding_len; i++) {
-        data[data_len + i] =  padding_len;
+        data[data_len + i] =  padding_len; //<- aquí se usa el valor 4 como byte, NO como carácter '4'
     }
 
     // Asegurar que el texto esté terminado con un \0
     data[data_len + padding_len] = '\0';
+    }
 }
 
 void print_text_with_padding(char *data) {

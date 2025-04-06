@@ -15,7 +15,7 @@ void random_bytes(unsigned char *buf, int len) {
     for (int i = 0; i < len; i++) buf[i] = rand() % 256; // Genera números aleatorios en el rango 0-255
 }
 
-// Función para agregar el relleno PKCS#7 ejer9
+// Función para agregar el relleno PKCS#7 adaptado de ejer9
 void pkcs7_padding(unsigned char *data, int len, int *padded_len) {
     int padding = BLOCK_SIZE - (len % BLOCK_SIZE); // Calcula el número de bytes de relleno necesario
     for (int i = 0; i < padding; i++) {
@@ -41,9 +41,9 @@ void aes_cbc_encrypt(const unsigned char *in, unsigned char *out, const unsigned
     }
 }
 
-// Función de selección aleatoria de cadenas y cifrado CBC ejer15 + desencriptar cbc
+// Función de selección aleatoria de cadenas y cifrado CBC ejer15 + encriptar cbc
 void encrypt_random_string(unsigned char *ciphertext, unsigned char *iv, int *ciphertext_len) {
-    char *strings[NUMERO_STRINGS] = {
+    const char *strings[NUMERO_STRINGS] = {
         "MDAwMDAwTm93IHRoYXQgdGhlIHBhcnR5IGlzIGp1bXBpbmc=", 
         "MDAwMDAxV2l0aCB0aGUgYmFzcyBraWNrZWQgaW4gYW5kIHRoZSBWZWdhJ3MgYXJlIHB1bXBpbic=", 
         "MDAwMDAyUXVpY2sgdG8gdGhlIHBvaW50LCB0byB0aGUgcG9pbnQsIG5vIGZha2luZw==", 

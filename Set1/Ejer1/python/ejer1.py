@@ -1,4 +1,4 @@
-# Importar la función para base64
+# Importar la función para base64 fuentes en fuentes.txt
 from base64 import b64encode
 
 # Hexadecimal a convertir
@@ -12,3 +12,6 @@ b64_string = b64_bytes.decode()
 
 # Imprimir el resultado
 print(b64_string)
+
+
+
